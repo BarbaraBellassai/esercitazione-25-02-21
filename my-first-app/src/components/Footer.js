@@ -1,12 +1,17 @@
-import "../assets/footer.css";
+//import "../assets/footer.css";
+import Proptypse from "prop-types"
 
 function Footer(props) {
+    const {year, company} = props;
     return(
         <footer>
-            <span>{props.year}</span>
+            <span>{year}</span>
             <span>©</span>
-            <span>{props.company}</span>
+            <span>{company}</span>
         </footer>
     )
+}
+Footer.Proptypse ={
+    company: Proptypse.string.isRequired
 }
 export default Footer;
