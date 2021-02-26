@@ -1,0 +1,11 @@
+header{
+    background-color: grey;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 2rem;
+    margin : 0 
+}
