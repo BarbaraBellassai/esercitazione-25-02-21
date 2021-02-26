@@ -1,4 +1,4 @@
-//import "../assets/body.css";
+import "./body.css";
 import Proptypse from "prop-types"
 import React, { Component } from 'react'
 import Product from "./Product"
@@ -20,18 +20,18 @@ export default class Body extends Component {
         const {cover,title,description, products} = this.props;
         const {showProducts} = this.state
         return (
-            <div>
-              <img src = {cover} alt = "body cover"/>
+            <div className= "Body">
+              <img className= "Body_img" src = {cover} alt = "body cover"/>
               <h3>{title}</h3> 
               <p>{description}</p>
             
               <div className="products-container">
                 {showProducts ? (
                 products.map((product) => {
-                return <li>{<Product image={product.image} title={product.title}/>}</li>;
+                return <li className= "product-card">{<Product image={product.image} title={product.title}/>}</li>;
                      })
                 ) : (
-              <button onClick={() => this.makeProductsVisible()}>
+              <button className="button" onClick={() => this.makeProductsVisible()}>
                 Show products
               </button>
                 )}

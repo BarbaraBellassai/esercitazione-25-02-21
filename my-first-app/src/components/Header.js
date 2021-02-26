@@ -1,4 +1,4 @@
-//import "../assets/header.css";
+import "./header.css";
 import Proptypse from "prop-types"
 function Header(props) {
     const {name, logo} = props

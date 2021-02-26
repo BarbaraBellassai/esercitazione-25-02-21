@@ -1,4 +1,4 @@
-//import "../assets/footer.css";
+import "./footer.css";
 import Proptypse from "prop-types"
 
 function Footer(props) {
