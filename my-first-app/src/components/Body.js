@@ -1,18 +1,19 @@
 //import "../assets/body.css";
 import Proptypse from "prop-types"
 import React, { Component } from 'react'
+import Product from "./Product"
 
 export default class Body extends Component {
     constructor (props){
         super(props);
 
         this.state ={
-            showProduct: false,
+            showProducts: false,
         }
     }
 
     makeProductsVisible(){
-        this.setState({showProduct: false,})
+        this.setState({showProducts: true})
     }
 
     render() {
@@ -27,7 +28,7 @@ export default class Body extends Component {
               <div className="products-container">
                 {showProducts ? (
                 products.map((product) => {
-                return <li>{product.title}</li>;
+                return <li>{<Product image={product.image} title={product.title}/>}</li>;
                      })
                 ) : (
               <button onClick={() => this.makeProductsVisible()}>

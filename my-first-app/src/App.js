@@ -3,6 +3,7 @@ import Header from '../src/components/Header'
 import Body from '../src/components/Body'
 import Footer from '../src/components/Footer'
 
+
 const data = {
   name: "HappyShoes",
   logo: "https://logoipsum.com/logo/logo-16.svg",
@@ -72,7 +73,7 @@ function App() {
     <div className="App">
       <Header name={data.name} logo={data.logo}/>
       <main>
-        <Body cover={data.cover} title={data.title} description={data.description}/>
+        <Body cover={data.cover} title={data.title} description={data.description} products={data.products}/>
       </main>
       <Footer year={currentYear} company={data.company} />
     </div>
